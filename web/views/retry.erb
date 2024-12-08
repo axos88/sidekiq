@@ -12,7 +12,7 @@
       </tr>
       <tr>
         <th><%= t('ErrorMessage') %></th>
-        <td><%= h(@retry['error_message']) %></td>
+        <td><%= h(@retry['error_message']).split("\n").join("<br />") %></td>
       </tr>
       <% if @retry.error_backtrace %>
         <tr>
